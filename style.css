@@ -1,0 +1,140 @@
+html
+{
+  overflow: hidden;
+}
+
+body
+{
+  font-family: 'Lato',sans-serif;
+  font-size: normal;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  color: #32394A;
+  align-items: center;
+  text-align: center;
+
+  /*background: #ECECEC;*/
+}
+
+.header
+{
+  width: 90%;
+  margin: auto;
+  padding-top:50px;
+
+}
+
+.header h1
+{
+  font-family: 'Pacifico', sans-serif;
+  letter-spacing: 0:04em;
+  font-size: 55px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  padding-top: 24px;
+  padding-bottom: 30px;
+}
+
+.header h2
+{
+  font-family: 'Lato';
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.profilePic
+{
+  position: relative;
+  align-items: center;
+}
+
+.profilePic div
+{
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
+
+.profilePic img
+{
+    top: 50%;
+}
+
+.profilePic div
+{
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0%;
+  right: 0%;
+  max-width: 900px;
+  margin: auto;
+  height:2px;
+  background: #C5BD7C;
+}
+
+.intro div
+{
+  max-width: 794px;
+}
+
+.nav
+{
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.nav h1
+{
+  font-family: 'Lato';
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.nav div
+{
+  margin: auto;
+  max-width: 114px;
+  height: 4px;
+  background: #C5BD7C;
+  align-items: center;
+}
+
+
+.work
+{
+    padding-bottom: 110px;
+}
+
+
+.work table
+{
+  margin: auto;
+  width: 1099px;
+}
+
+.work tr
+{
+}
+
+.test table
+{
+  margin:auto;
+}
+
+@media screen and (max-width: 1020px){
+  .profilePic div{
+    max-width: 90%
+  }
+}
