@@ -22,7 +22,6 @@ body
   width: 90%;
   margin: auto;
   padding-top:50px;
-
 }
 
 .header h1
@@ -36,6 +35,8 @@ body
   letter-spacing: 0.04em;
   padding-top: 24px;
   padding-bottom: 30px;
+  margin: auto;
+  width: auto;
 }
 
 .header h2
@@ -44,6 +45,8 @@ body
   font-size: 24px;
   font-weight: normal;
   font-style: normal;
+  max-width: 755px;
+  margin: auto;
 }
 
 .profilePic
@@ -62,6 +65,8 @@ body
 .profilePic img
 {
     top: 50%;
+    width: auto;
+    height: auto;
 }
 
 .profilePic div
@@ -124,17 +129,61 @@ body
   width: 1099px;
 }
 
-.work tr
+.work img
 {
+  filter: brightness(100%);
+  transition: .5s ease;
 }
 
-.test table
+.work img:hover
 {
-  margin:auto;
+  filter: brightness(30%);
 }
 
-@media screen and (max-width: 1020px){
-  .profilePic div{
-    max-width: 90%
-  }
+.work img:hover .label
+{
+  opacity:0;
+}
+
+.work th
+{
+    position: relative;
+}
+
+.label
+{
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+@media screen and (max-width: 595px) {
+
+    .header h1
+    {
+      width:310px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .header h2
+    {
+      max-width: 510px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .header h2
+    {
+      width: 290px;
+    }
 }
