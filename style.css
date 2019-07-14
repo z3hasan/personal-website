@@ -148,13 +148,24 @@ body
   margin-right: auto;
   box-sizing: inherit;
   display: block;
+  padding-bottom: 8px;
 }
 
 .work-half
 {
   box-sizing: inherit;
   display: block;
-  padding: 8px;
+  padding-right: 8px;
+  padding-left:8px;
+  float:left;
+}
+
+.work-third
+{
+  box-sizing: inherit;
+  display: block;
+  padding-right: 8px;
+  padding-left:8px;
   float:left;
 }
 
@@ -203,8 +214,6 @@ body
     {
       max-width: 400px;
     }
-
-
 }
 
 @media screen and (max-width: 1082px) {
