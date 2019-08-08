@@ -183,6 +183,11 @@ body
   padding-top: 16px;
 }
 
+#cibc
+{
+  object-position: 5% 50%;
+}
+
 @media screen and (max-width: 1090px){
   .main
   {
@@ -191,6 +196,10 @@ body
   .work-image
   {
     width: 517px;
+  }
+  #cibc
+  {
+    object-position: 50% 50%;
   }
 }
 
