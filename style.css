@@ -188,6 +188,11 @@ body
   object-position: 5% 50%;
 }
 
+#marsh
+{
+  object-position: 25% 50%;
+}
+
 @media screen and (max-width: 1090px){
   .main
   {
@@ -196,11 +201,9 @@ body
   .work-image
   {
     width: 517px;
-  }
-  #cibc
-  {
     object-position: 50% 50%;
   }
+
 }
 
 @media screen and (max-width: 595px) {
