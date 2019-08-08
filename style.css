@@ -13,7 +13,7 @@ body
   color: #32394A;
   align-items: center;
   text-align: center;
-
+  pointer-events: none;
   /*background: #ECECEC;*/
 }
 
@@ -170,7 +170,6 @@ body
   transform: translate(-50%, -50%);
   text-align: center;
   background-color: white;
-  /*color: black;*/
   font-size: 16px;
   padding: 16px 32px;
 }
