@@ -214,6 +214,16 @@ body
     }
 }
 
+@media screen and (max-width: 535px) {
+
+  .work-image
+  {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
 @media screen and (max-width: 720px) {
 
     #intro1
