@@ -147,12 +147,12 @@ body
   box-sizing: inherit;
 }
 
-.work-container #work
+.work-container .work-image
 {
   object-fit: cover;
 }
 
-.work-container:hover #work
+.work-container:hover .work-image
 {
   transition: .5s ease;
   filter: brightness(40%) blur(2px);
@@ -188,7 +188,7 @@ body
   {
     max-width: 530px;
   }
-  #work
+  .work-image
   {
     width: 517px;
   }
