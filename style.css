@@ -134,7 +134,7 @@ body
   justify-content: center;
 }
 
-.container
+.work-container
 {
   box-sizing: inherit;
   display: block;
@@ -147,13 +147,18 @@ body
   box-sizing: inherit;
 }
 
-.container:hover #work
+.work-container #work
+{
+  object-fit: cover;
+}
+
+.work-container:hover #work
 {
   transition: .5s ease;
   filter: brightness(40%) blur(2px);
 }
 
-.container:hover .label
+.work-container:hover .label
 {
   transition: .5s ease;
   opacity:1;
@@ -182,6 +187,10 @@ body
   .main
   {
     max-width: 530px;
+  }
+  #work
+  {
+    width: 517px;
   }
 }
 
