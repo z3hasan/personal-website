@@ -33,7 +33,7 @@ body
   font-style: normal;
   line-height: 110%;
   letter-spacing: 0.04em;
-  padding-top: 24px;
+  padding-top: 5px;
   padding-bottom: 30px;
   margin: auto;
   width: auto;
@@ -45,9 +45,9 @@ body
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
-  max-width: 755px;
+  max-width: 655px;
   margin: auto;
-  padding-bottom: 7px;
+  padding-bottom: 15px;
 }
 
 .profilePic
@@ -66,8 +66,8 @@ body
 .profilePic img
 {
     top: 50%;
-    width: auto;
-    height: auto;
+    width: 120px;
+    height: 120px;
 }
 
 .profilePic div
@@ -83,8 +83,10 @@ body
   background: #C5BD7C;
 }
 
-.intro div
+.intro
 {
+  margin: auto;
+  padding-top: 50px;
   max-width: 794px;
 }
 
@@ -105,13 +107,13 @@ body
   font-style: normal;
   letter-spacing: 0.01em;
   margin: auto;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .nav div
 {
   margin: auto;
-  max-width: 114px;
+  max-width: 40px;
   height: 4px;
   background: #C5BD7C;
   align-items: center;
@@ -206,14 +208,6 @@ body
 
 }
 
-@media screen and (max-width: 595px) {
-
-    .header h1
-    {
-      width:310px;
-    }
-}
-
 @media screen and (max-width: 535px) {
 
   .work-image
@@ -222,20 +216,4 @@ body
     height: auto;
   }
 
-}
-
-@media screen and (max-width: 720px) {
-
-    #intro1
-    {
-      max-width: 400px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    .header h2
-    {
-      width: 290px;
-    }
 }
