@@ -34,7 +34,7 @@ body
   line-height: 110%;
   letter-spacing: 0.04em;
   padding-top: 5px;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
   margin: auto;
   width: auto;
 }
@@ -54,6 +54,8 @@ body
 {
   position: relative;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .profilePic div
@@ -81,12 +83,12 @@ body
   margin: auto;
   height:2px;
   background: #C5BD7C;
+
 }
 
 .intro
 {
   margin: auto;
-  padding-top: 50px;
   max-width: 794px;
 }
 
@@ -143,6 +145,7 @@ body
   padding-right: 8px;
   padding-left:8px;
   padding-bottom: 8px;
+  padding-top: 8px;
   position: relative;
   filter: brightness(100%) blur(0px);
   transition: .5s ease;
