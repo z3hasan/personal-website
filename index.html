@@ -43,7 +43,7 @@
     <div class="main">
 
       <div class="work">
-        <div class="work-container">
+        <div class="work-container" onclick="openModal()">
           <img class="work-image" alt="Datadog" src="images\datadog.png" width=517 height=339>
           <div class="label">
             <img alt="Datadog" src="images\datadog logo.png">
@@ -82,6 +82,10 @@
           </div>
         </div>
       </div>
+
+    </div>
+
+    <div id='modal' class="modal">
     </div>
 
     <script>
@@ -89,6 +93,16 @@
     function refresh()
     {
         document.body.style.pointerEvents = "auto";
+    }
+
+    function openModal()
+    {
+      document.getElementById("modal").style.display = "block";
+    }
+
+    function closeModal()
+    {
+      document.getElementById("modal").style.display = "none";
     }
     </script>
 
