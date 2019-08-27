@@ -39,14 +39,14 @@
     <div class="main" id='main'>
       <div class="row">
         <div class="column">
-          <div class="item">
+          <div class="item" onclick="openModal(); modalContent(1)">
             <img src="images\mental health icon.png">
             <div class="item-text">
               <h1>Mental Health App</h1>
               <h2>Allow therapists to assign activities to clients and clients to share their progress</h2>
             </div>
           </div>
-          <div class="item">
+          <div class="item" onclick="openModal(); modalContent(2)">
             <img src="images\bhand icon.png">
             <div class="item-text">
               <h1>Dance Wearable</h1>
@@ -56,14 +56,14 @@
         </div>
 
       <div class="column">
-        <div class="item">
+        <div class="item" onclick="openModal(); modalContent(3)">
           <img src="images\myo icon.png">
           <div class="item-text">
             <h1>CrossFit Myo</h1>
             <h2>Correct exercise form by monitoring arm movement</h2>
           </div>
         </div>
-        <div class="item">
+        <div class="item" onclick="openModal(); modalContent(4)">
           <img src="images\arduino piano.png">
           <div class="item-text">
             <h1>Arduino Piano</h1>
@@ -75,12 +75,81 @@
 
     </div>
 
+    <div class="modal">
+      <div class="modal-content" id="arduinoPiano">
+        <video controls width="100%">
+          <source src="arduino piano.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="modal-content" id="mentalHealth">
+        <p>mental health</p>
+      </div>
+      <div class="modal-content" id="CrossFit">
+        <p>CrossFit</p>
+      </div>
+      <div class="modal-content" id="bHand">
+        <img src="images\bhand.png" style="margin:auto">
+      </div>
+
+    </div>
+
     <script>
+
+    //modal window object
+    var modal = document.getElementsByClassName('modal')[0];
+
+    function modalContent(n)
+    {
+      switch (n) {
+        case 1:
+          document.getElementById('mentalHealth').style.display = 'block';
+          break;
+        case 2:
+          document.getElementById('bHand').style.display = 'block';
+          break;
+        case 3:
+          document.getElementById('CrossFit').style.display = 'block';
+          break;
+        case 4:
+          document.getElementById('arduinoPiano').style.display = 'block';
+          break;
+        default:
+
+      }
+    }
+
+    function openModal()
+    {
+      modal.style.display = 'flex';
+    }
+
+    function closeModal()
+    {
+      modal.style.display = 'none';
+      var content = document.getElementsByClassName('modal-content');
+      for (i = 0, len = content.length; i < len; i++)
+      {
+        content[i].style.display = "none";
+      }
+    }
 
     function refresh()
     {
         document.body.style.pointerEvents = "auto";
     }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+
+    window.onkeydown = function( event ) {
+      if ( event.keyCode == 27 ) {
+          closeModal();
+      }
+    }
+
     </script>
 
   </body>
