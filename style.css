@@ -13,12 +13,14 @@ body
   line-height: normal;
   color: #000000;
   pointer-events: none;
-  padding-left: 150px;
+
+  padding-bottom: 40px;
   margin: 10px;
 }
 
 .page1
 {
+  padding-left: 150px;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   position: relative;
@@ -40,7 +42,6 @@ body
 {
   height: 160px;
   padding-right: 20px;
-
 }
 
 #tagline
@@ -54,6 +55,8 @@ body
 {
   position: absolute;
   transform: translateY(50%);
+  padding-right: 40px;
+  max-width: 830px;
 }
 
 .header h1
@@ -73,15 +76,20 @@ body
   font-size: 22px;
   font-weight: normal;
   font-style: normal;
-  max-width: 830px;
   padding-bottom: 15px;
   letter-spacing: 0.04em;
   margin: 0px;
 }
 
-.intro a:link
+.intro a
 {
+  color: #000000;
   text-decoration: none;
+
+}
+
+.intro a:hover
+{
   color: #A02CC9;
 }
 
@@ -106,22 +114,60 @@ body
 #button:hover
 {
   background-color: #BE5DE0;
-
 }
 
 .main
 {
   padding-top: 40px;
-  padding-bottom: 40px;
   display: block;
-  max-width: 1066px;
+  margin: auto;
   box-sizing: border-box;
 }
 
-.work
+.row
 {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
+  max-width: 900px;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+
+.column
+{
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+}
+
+.item
+{
+  display: block;
+}
+
+.item img
+{
+  width: 100%;
+  height: auto;
+}
+
+.item-text
+{
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+
+.item-text h1
+{
+  font-family: 'Roboto Condensed','Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.item-text h2
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding-bottom: 20px;
 }
 
 .work-container
@@ -193,6 +239,11 @@ body
     object-position: 50% 50%;
   }
 
+  .page1
+  {
+    padding-left: 13.76%;
+  }
+
 }
 
 @media screen and (max-width: 535px) {
@@ -203,4 +254,11 @@ body
     height: auto;
   }
 
+}
+
+@media screen and (max-width: 958px){
+  .intro
+  {
+    max-width: 670px;
+  }
 }
