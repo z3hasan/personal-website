@@ -80,23 +80,37 @@
         <video controls width="100%">
           <source src="arduino piano.mp4" type="video/mp4">
         </video>
+        <h1>Arduino Piano</h1>
+        <p>A full octave keyboard built using capacitors, Arduino Uno and speakers and tested device with function generator and oscilloscope.
+           It uses the Processing function on Arduino IDE to create features that record, playback and teach users how to play the piano.</p>
       </div>
       <div class="modal-content" id="mentalHealth">
-        <p>mental health</p>
+        <p>Coming soon...</p>
       </div>
       <div class="modal-content" id="CrossFit">
-        <p>CrossFit</p>
+        <p>Coming soon...</p>
       </div>
       <div class="modal-content" id="bHand">
         <img src="images\bhand.png" style="margin:auto">
       </div>
-
+      <img src="images\close.png" id="close">
     </div>
 
     <script>
 
     //modal window object
     var modal = document.getElementsByClassName('modal')[0];
+
+    document.getElementById('close').onclick = function()
+    {
+      closeModal();
+    }
+
+    window.onkeydown = function( event ) {
+      if ( event.keyCode == 27 ) {
+          closeModal();
+      }
+    }
 
     function modalContent(n)
     {
@@ -120,7 +134,7 @@
 
     function openModal()
     {
-      modal.style.display = 'flex';
+      modal.style.display = 'block';
     }
 
     function closeModal()
@@ -141,12 +155,6 @@
     window.onclick = function(event) {
       if (event.target == modal) {
         closeModal();
-      }
-    }
-
-    window.onkeydown = function( event ) {
-      if ( event.keyCode == 27 ) {
-          closeModal();
       }
     }
 
