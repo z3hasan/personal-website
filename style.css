@@ -101,8 +101,8 @@ body
   font-size: 22px;
   background-color:#A02CC9;
   cursor: pointer;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 20px;
   padding-right:30px;
   color: #FFFFFF;
@@ -114,6 +114,16 @@ body
 #button:hover
 {
   background-color: #BE5DE0;
+}
+
+#arrow
+{
+  padding-left: 10px;
+  height: 26px;
+  width: auto;
+  margin: auto 0px;
+  display: inline;
+  vertical-align: top;
 }
 
 .main
@@ -131,6 +141,7 @@ body
   max-width: 900px;
   margin: 0px auto;
   justify-content: space-between;
+  padding: 0px 10px;
 }
 
 .column
@@ -229,29 +240,10 @@ body
 }
 
 @media screen and (max-width: 1090px){
-  .main
-  {
-    max-width: 530px;
-  }
-  .work-image
-  {
-    width: 517px;
-    object-position: 50% 50%;
-  }
 
   .page1
   {
     padding-left: 13.76%;
-  }
-
-}
-
-@media screen and (max-width: 535px) {
-
-  .work-image
-  {
-    max-width: 100%;
-    height: auto;
   }
 
 }
