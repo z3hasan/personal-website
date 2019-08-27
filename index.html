@@ -8,40 +8,72 @@
     <meta name="author" content="Zara Hasan" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- <link rel="shortcut icon" href="images/favicon.png" />   -->
-  <link rel="stylesheet" type="text/css"  href='style.css' />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="shortcut icon" href="images/favicon.png" />
-
+    <link rel="stylesheet" type="text/css"  href='style.css' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="shortcut icon" href="images/favicon.png" />
   </head>
 
   <body onload="refresh()">
-    <div class="header">
-      <div class="intro">
-        <h2>Hi! I'm</h2>
-        <h1>Zara Hasan</h1>
-      </div>
-      <div class="profilePic">
-        <div></div>
-        <img alt="Profile Picture" src="images\profile.png">
-      </div>
 
+    <div class="page1">
       <div class="intro">
+        <div class="header">
+          <img id='profilePic' src="images\profile.png" style="float:left;">
+          <h1>Hi, I'm Zara Hasan!</h1>
+          <h2 id='tagline' style="color:#2B6B32">Strategy. </h2>
+          <h2 id='tagline' style="color:#1400FF">Execution. </h2>
+          <h2 id='tagline' style="color:#A02CC9">Understanding the User.</h2>
+        </div>
         <h2>I am a Product Manager and a Systems Design Engineering Grad.</h2>
-        <h2>From concept to market, I've delivered and led the success of digital solutions
-           for industries ranging from e-commerce to healthcare.</h2>
-        <h2>I am currently looking for full-time oppurtunities.</h2>
+        <h2>From concept to market, I've delivered and led the success of digital solutions for industries ranging from e-commerce to healthcare. Check me out on <a href="https://www.linkedin.com/in/zarahasan/"><u>LinkedIn</u></a>.</h2>
+        <h2>I am currently looking for full-time opportunities.</h2>
+        <a href='#main' id='button'>PORTFOLIO
+          <img id="arrow" src="images\arrow.png">
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="main" id='main'>
+      <div class="row">
+        <div class="column">
+          <div class="item">
+            <img src="images\mental health icon.png">
+            <div class="item-text">
+              <h1>Mental Health App</h1>
+              <h2>Allow therapists to assign activities to clients and clients to share their progress</h2>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images\bhand icon.png">
+            <div class="item-text">
+              <h1>Dance Wearable</h1>
+              <h2>Control music properties of a song through dance moves</h2>
+            </div>
+          </div>
+        </div>
+
+      <div class="column">
+        <div class="item">
+          <img src="images\myo icon.png">
+          <div class="item-text">
+            <h1>CrossFit Myo</h1>
+            <h2>Correct exercise form by monitoring arm movement</h2>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images\arduino piano.png">
+          <div class="item-text">
+            <h1>Arduino Piano</h1>
+            <h2>An octave keyboard using Arduino</h2>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="nav">
-      <h1>Work</h1>
-      <div></div>
-    </div>
-
-    <div class="main">
-
+<!--
       <div class="work">
         <div class="work-container" onclick="openModal()">
           <img class="work-image" alt="Datadog" src="images\datadog.png" width=517 height=339>
@@ -82,10 +114,14 @@
           </div>
         </div>
       </div>
+<<<<<<< HEAD
 
     </div>
 
     <div id='modal' class="modal">
+=======
+      -->
+>>>>>>> 52c39dcdb18c5fa596b6362f9d9e408c0bc47f97
     </div>
 
     <script>
