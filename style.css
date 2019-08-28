@@ -54,8 +54,9 @@ body
 
 .intro
 {
-  position: absolute;
-  transform: translateY(50%);
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
   padding-right: 40px;
   max-width: 830px;
 }
@@ -195,64 +196,6 @@ body
 
 }
 
-.work-container
-{
-  box-sizing: inherit;
-  display: block;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  position: relative;
-  filter: brightness(100%) blur(0px);
-  transition: .5s ease;
-  box-sizing: inherit;
-}
-
-.work-container .work-image
-{
-  object-fit: cover;
-}
-
-.work-container:hover .work-image
-{
-  transition: .5s ease;
-  filter: brightness(40%) blur(2px);
-}
-
-.work-container:hover .label
-{
-  transition: .5s ease;
-  opacity:1;
-}
-
-.label
-{
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background-color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.label img
-{
-  padding-top: 16px;
-}
-
-#cibc
-{
-  object-position: 5% 50%;
-}
-
-#marsh
-{
-  object-position: 25% 50%;
-}
-
 .modal
 {
     transition: .2s ease;
@@ -341,4 +284,63 @@ body
   {
     max-width: 670px;
   }
+}
+
+
+.work-container
+{
+  box-sizing: inherit;
+  display: block;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  position: relative;
+  filter: brightness(100%) blur(0px);
+  transition: .5s ease;
+  box-sizing: inherit;
+}
+
+.work-container .work-image
+{
+  object-fit: cover;
+}
+
+.work-container:hover .work-image
+{
+  transition: .5s ease;
+  filter: brightness(40%) blur(2px);
+}
+
+.work-container:hover .label
+{
+  transition: .5s ease;
+  opacity:1;
+}
+
+.label
+{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.label img
+{
+  padding-top: 16px;
+}
+
+#cibc
+{
+  object-position: 5% 50%;
+}
+
+#marsh
+{
+  object-position: 25% 50%;
 }
