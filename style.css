@@ -241,6 +241,7 @@ body
 {
   display: block;
   margin: auto;
+  width: 100%;
 }
 
 #close
@@ -279,7 +280,7 @@ body
 
 #mentalHealth img
 {
-  width: 100%;
+
 }
 
 #bHand
