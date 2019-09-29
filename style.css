@@ -169,7 +169,6 @@ body
   filter: brightness(70%);
   transition: .2s ease;
   cursor: pointer;
-
 }
 
 .item img
@@ -213,6 +212,8 @@ body
 
 .modal-content
 {
+  height: auto;
+  display: none;
   background-color: #E7E7E7;
   overflow: auto;
   max-height: 90%;
@@ -220,6 +221,7 @@ body
   top: 50%;
   transform: translate(-50%, -50%);
   position: relative;
+  box-sizing: border-box;
 }
 
 .modal-content h1
@@ -232,8 +234,14 @@ body
 {
   font-family: 'Poppins',sans-serif;
   padding-bottom: 10px;
+  font-size: 12px;
 }
 
+.modal-content img
+{
+  display: block;
+  margin: auto;
+}
 
 #close
 {
@@ -249,11 +257,9 @@ body
 
 #arduinoPiano
 {
-  box-sizing: border-box;
   display: none;
   width:70%;
-  height: auto;
-  padding: 40px 200px 0px;
+  padding: 40px 12% 0px;
 }
 
 #CrossFit
@@ -261,15 +267,19 @@ body
   display: none;
   width:75%;
   height: auto;
-  padding: 20px;
+  padding: 20px 100px;
 }
 
 #mentalHealth
 {
   display: none;
   width:75%;
-  height: auto;
-  padding: 20px;
+  padding: 40px 12% 40px;
+}
+
+#mentalHealth img
+{
+  width: 100%;
 }
 
 #bHand
@@ -286,7 +296,6 @@ body
     max-width: 670px;
   }
 }
-
 
 .work-container
 {
