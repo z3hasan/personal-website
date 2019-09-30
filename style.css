@@ -222,6 +222,7 @@ body
   transform: translate(-50%, -50%);
   position: relative;
   box-sizing: border-box;
+  font-size: 12px;
 }
 
 .modal-content h1
@@ -235,13 +236,13 @@ body
   font-family: 'Poppins',sans-serif;
   padding-bottom: 10px;
   font-size: 12px;
+  text-align: justify;
 }
 
 .modal-content img
 {
   display: block;
   margin: auto;
-  width: 100%;
 }
 
 #close
