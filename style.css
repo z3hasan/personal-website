@@ -152,6 +152,7 @@ body
   display: flex;
   flex-direction: column;
   width: 426px;
+  margin: 0px auto;
 }
 
 .item
