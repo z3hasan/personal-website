@@ -210,16 +210,15 @@ body
     height: 100%;
     display:none;
     align-items: flex-start;
-    overflow-y: auto;
 }
 
 .modal-content
 {
   height: auto;
   display: none;
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  max-width: 1000px;
+  background-color: #E7E7E7;
+  overflow: auto;
+  max-height: 90%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
