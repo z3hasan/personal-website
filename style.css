@@ -274,6 +274,14 @@ body
   padding: 20px 100px;
 }
 
+#TrackingApp
+{
+  display: none;
+  width:75%;
+  height: auto;
+  padding: 20px 100px;
+}
+
 #mentalHealth
 {
   display: none;
