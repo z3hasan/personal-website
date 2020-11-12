@@ -24,6 +24,7 @@ body
   background-color: #F3F3F3;
   padding-left: 13.76%;
   height: 100vh;
+  min-height: 560px;
   font-family: 'Poppins', sans-serif;
   position: relative;
 }
@@ -44,9 +45,10 @@ body
 {
   height: 160px;
   padding-right: 20px;
+  float: left;
 }
 
-#tagline
+.header .tagline
 {
   font-family: 'Roboto Condensed','Poppins', sans-serif;
   display: inline-block;
@@ -308,9 +310,57 @@ body
   display: none;
 }
 
-@media screen and (max-width: 958px){
-  .intro
+@media screen and (max-width: 960px){
+  .intro h2
   {
-    max-width: 670px;
+    font-size: 2vw;
   }
+}
+
+@media screen and (max-width: 785px){
+  .page1{
+    min-height: 610px;
+  }
+  .header h1
+  {
+    padding-top: 20px;
+  }
+  #profilePic
+  {
+    float: none;
+  }
+  .header{
+    padding-bottom: 0px;
+  }
+  .intro h2
+  {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+}
+
+
+@media screen and (max-width: 575px){
+  .page1
+  {
+    min-height: 660px;
+    padding-left: 10%
+  }
+  .intro h1
+  {
+    font-size: 9vw;
+  }
+  .intro h2
+  {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 390px){
+  .page1
+  {
+    min-height: 720px;
+
+  }
+
 }
